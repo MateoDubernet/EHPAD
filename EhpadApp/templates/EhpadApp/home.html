@@ -1,0 +1,8 @@
+{% extends 'EhpadApp/main.html' %}
+
+{% block content %} 
+{% include 'EhpadApp/navbar.html' %}
+
+<h2 class="title">Bienvenue {{user.last_name}} {{user.first_name}}</h2>
+
+{% endblock %}

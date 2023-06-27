@@ -1,0 +1,17 @@
+{% extends 'EhpadApp/main.html' %}
+
+{% block content %} 
+
+<div class="register">
+    a!d1vZù5
+    <h2 class="title">Inscription</h2>
+
+    <form method="post" class="authenticate-form">
+        {% csrf_token %} {{ form.as_p }}
+        <button type="submit">Inscription</button>
+    </form>
+    
+    <a class="login-link" href="{% url 'EhpadApp:login' %}">Se connecter</a>
+</div>
+
+{% endblock %}
