@@ -24,8 +24,12 @@ class CustomUser(AbstractUser):
     def __str__(self):
         return self.username
     
+#Table Visitor de la base de donnée
 class Visitor(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField(max_length=150)
     subject = models.CharField(max_length=200)
     message = models.TextField()
+
+    def __str__(self):
+        return self.name

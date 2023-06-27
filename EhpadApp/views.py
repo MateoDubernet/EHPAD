@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import AuthenticationForm
-from . forms import CustomUserCreationForm
-from . models import CustomUser
+from . forms import *
+from . models import *
 from django.contrib.auth.decorators import login_required
 
 # Create your views here.
@@ -55,6 +55,19 @@ def logOut(request):
 @login_required()
 def home(request):
     return render(request, 'EhpadApp/home.html', {'user': request.user})
+
+@login_required
+def visitor_contact_form(request):
+    if request.method == 'POST':
+        form = VisitorContactForm(request.POST)
+        if form.is_valid():
+            form.save() 
+            return redirect('EhpadApp:contact')
+        else: 
+            return render(request, 'EhpadApp/contact.html', {'form': form})
+    else:
+        form = VisitorContactForm()
+        return render(request, 'EhpadApp/contact.html', {'form': form})
 
 
 
