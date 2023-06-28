@@ -4,6 +4,8 @@ from django.contrib.auth.forms import AuthenticationForm
 from . forms import *
 from . models import *
 from django.contrib.auth.decorators import login_required
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
 
 # Create your views here.
 
@@ -62,6 +64,27 @@ def visitor_contact_form(request):
         form = VisitorContactForm(request.POST)
         if form.is_valid():
             form.save() 
+
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+            subject = form.cleaned_data['subject']
+            message = form.cleaned_data['message']
+
+            html = render_to_string('EhpadApp/email.html', {
+                'name': name,
+                'email': email,
+                'subject': subject,
+                'message': message
+            })
+
+            send_mail(
+                form.cleaned_data['subject'],
+                form.cleaned_data['message'],
+                form.cleaned_data['email'],
+                ['projetdjango3@gmail.com'],
+                html_message=html
+            )
+
             return redirect('EhpadApp:contact')
         else: 
             return render(request, 'EhpadApp/contact.html', {'form': form})

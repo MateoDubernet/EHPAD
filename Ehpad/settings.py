@@ -128,3 +128,9 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'EhpadApp.CustomUser'
+
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = '29cab43f32bc4f'
+EMAIL_HOST_PASSWORD = 'b3f124b4c56f5f'
+EMAIL_PORT = '2525'
+

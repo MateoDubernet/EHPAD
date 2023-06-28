@@ -1,18 +1,32 @@
-1. lancer la commande: .\EhpadEnv\Scripts\activate
+A. Lancer l'application :
 
-2. installer Django sur EhpadEnv: pip install django
+    1. lancer la commande: .\EhpadEnv\Scripts\activate
 
-3. installer mysqlclient: pip install mysqlclient
+    2. installer Django sur EhpadEnv: pip install django
 
-4. creer la base de donnée 'ehpad_project' manuellement
+    3. installer mysqlclient: pip install mysqlclient
 
-5. changer les param de la base de donnée(port, user, mdp, host, port) dans Ehpad/setting.py
+    4. creer la base de donnée 'ehpad_project' manuellement
 
-6. Lancer la commande: python manage.py makemigrations
+    5. changer les param de la base de donnée(port, user, mdp, host, port) dans Ehpad/setting.py
 
-7. Ensuite la commande: python manage.py migrate
+    6. Lancer la commande: python manage.py makemigrations
 
-8. Lancer l'applicarion: python manage.py runserver
+    7. Ensuite la commande: python manage.py migrate
 
-9. Aller à l'adresse: http://127.0.0.1:8000/Ehpad/register
+    8. Lancer l'applicarion: python manage.py runserver
+
+    9. Aller à l'adresse: http://127.0.0.1:8000/Ehpad/register
+
+B. Formulaire de contact
+
+    1. compléter le formulaire et valider
+
+    2. aller sur le site: https://mailtrap.io/inboxes/2294690/messages
+
+    3. connectez-vous avec les identifiants suivant:
+        Email: projetDjango3@gmail.com
+        Password: projetDjango3
+
+    5. Vous avez maintenant accès aux emails envoyer depuis le formulaire
 
