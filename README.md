@@ -28,5 +28,5 @@ B. Formulaire de contact
         Email: projetDjango3@gmail.com
         Password: projetDjango3
 
-    5. Vous avez maintenant accès aux emails envoyer depuis le formulaire
+    4. Vous avez maintenant accès aux emails envoyer depuis le formulaire
 
