@@ -3,6 +3,9 @@
 {% block content %} 
 {% include 'EhpadApp/navbar.html' %}
 
-<h2 class="title">Bienvenue {{user.last_name}} {{user.first_name}}</h2>
+<div class="body">
+    <h2 class="title">Bienvenue {{user.last_name}} {{user.first_name}}</h2>
+    <img class="main-logo" src="../../static/img/logo_ehpad.png" alt="logo">
+</div>
 
 {% endblock %}

@@ -58,6 +58,14 @@ def logOut(request):
 def home(request):
     return render(request, 'EhpadApp/home.html', {'user': request.user})
 
+@login_required()
+def about(request):
+    return render(request, 'EhpadApp/about.html')
+
+@login_required()
+def service(request):
+    return render(request, 'EhpadApp/service.html')
+
 @login_required
 def visitor_contact_form(request):
     if request.method == 'POST':

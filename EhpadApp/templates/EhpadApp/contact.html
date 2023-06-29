@@ -3,11 +3,13 @@
 {% block content %} 
 {% include 'EhpadApp/navbar.html' %}
 
-<h2 class="title">Contactez un professionnel</h2>
+<div class="body">
+    <h2 class="title">Contactez un professionnel</h2>
 
-<form method="post">
-    {% csrf_token %} {{ form.as_p }}
-    <button type="submit">Envoyer</button>
-</form>
+    <form method="post" class="form">
+        {% csrf_token %} {{ form.as_p }}
+        <button type="submit">Envoyer</button>
+    </form>
+</div>
 
 {% endblock %}
