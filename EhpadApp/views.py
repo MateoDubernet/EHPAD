@@ -63,8 +63,8 @@ def about(request):
     return render(request, 'EhpadApp/about.html')
 
 @login_required()
-def service(request):
-    return render(request, 'EhpadApp/service.html')
+def services(request):
+    return render(request, 'EhpadApp/services.html')
 
 @login_required
 def visitor_contact_form(request):
