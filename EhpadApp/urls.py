@@ -1,8 +1,10 @@
 from django.urls import path
 from . import views
+from django.views.generic.base import RedirectView
 
 app_name = 'EhpadApp'
 urlpatterns = [
+    path("", RedirectView.as_view(url='home/'), name="empty"),
     path("home/", views.home, name="home"),
     path("register/", views.register, name="register"),
     path("login/", views.logIn, name="login"),
