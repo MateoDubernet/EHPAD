@@ -1,0 +1,70 @@
+{% extends 'EhpadApp/main.html' %}
+
+{% block content %} 
+{% include 'EhpadApp/navbar.html' %}
+
+<div class="body">
+    <h2 class="title">Foire aux Questions</h2>
+</div>
+
+<ul>
+    <li>
+        <h3>Quels types de soins proposez-vous à l'EHPAD ?</h3>
+        <p>
+            Nous proposons une gamme de soins adaptés aux besoins de chaque résident, y compris les soins 
+            médicaux et infirmiers 24 heures sur 24, la réadaptation physique et le soutien psychologique. 
+            Notre objectif est de maintenir l'autonomie de nos résidents autant que possible tout en 
+            assurant leur sécurité et leur bien-être.
+        </p>
+    </li>
+    <li>
+        <h3>Quelles activités proposez-vous pour les résidents ?</h3>
+        <p>
+            Nous proposons une variété d'activités sociales, culturelles et de loisirs pour stimuler 
+            l'esprit et le corps de nos résidents. Cela comprend des ateliers d'art, de la musique, des 
+            jeux de société, des séances d'exercice physique adapté et des sorties régulières. Le 
+            programme d'activités est conçu en tenant compte des goûts et des capacités de chacun.
+        </p>
+    </li>
+    <li>
+        <h3>Comment sont organisées les visites des familles ?</h3>
+        <p>
+            Nous comprenons l'importance du lien familial et encourageons les visites. Vous pouvez rendre 
+            visite à votre proche à tout moment pendant les heures d'ouverture, bien que nous recommandons 
+            de vérifier à l'avance pour vous assurer que votre proche est disponible. Pour des raisons de 
+            sécurité et de tranquillité des résidents, nous avons un système de réservation en ligne.
+        </p>
+    </li>
+    <li>
+        <h3>Quelle est votre politique en matière de repas ?</h3>
+        <p>
+            Nous attachons une grande importance à la nutrition de nos résidents. Nos repas sont préparés 
+            sur place par notre chef cuisinier, en tenant compte des besoins nutritionnels spécifiques des 
+            personnes âgées. Nous proposons également des options pour les régimes alimentaires spécifiques 
+            et les préférences personnelles.
+        </p>
+    </li>
+    <li>
+        <h3>Comment le processus d'admission fonctionne-t-il ?</h3>
+        <p>
+            Le processus d'admission commence par une visite de l'établissement et une discussion avec notre 
+            équipe. Nous évaluerons les besoins et les préférences de votre proche pour nous assurer que nous 
+            pouvons fournir les soins appropriés. Une fois cette étape franchie, nous vous guiderons à travers 
+            les formalités administratives.
+        </p>
+    </li>
+    <li>
+        <h3> Comment garantissez-vous la sécurité des résidents ?</h3>
+        <p>
+            La sécurité de nos résidents est notre priorité. Notre établissement est sécurisé et surveillé 
+            24 heures sur 24. Nous disposons également d'un personnel formé pour gérer les situations 
+            d'urgence, et tous nos résidents ont un accès facile à l'aide médicale si nécessaire.
+        </p>
+    </li>
+</ul>
+<br>
+<h2>Vous cherchez quelque chose de plus spécifique? Vous pouvez nous envoyer votre question par notre 
+    <a href=" {% url 'EhpadApp:contact'%}">formulaire de contact</a>.
+</h2>
+<br>
+{% endblock %}
