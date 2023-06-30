@@ -48,33 +48,26 @@ def logIn(request):
         return render(request, 'EhpadApp/login.html', {'form': form})
 
 #permet de se déconnecter
-@login_required()
 def logOut(request):
     logout(request)
-    return redirect("EhpadApp:login")
+    return redirect("EhpadApp:home")
 
 #affiche la page home
-@login_required()
 def home(request):
     return render(request, 'EhpadApp/home.html', {'user': request.user})
 
-@login_required()
 def about(request):
     return render(request, 'EhpadApp/about.html')
 
-@login_required()
 def services(request):
     return render(request, 'EhpadApp/services.html')
 
-@login_required()
 def faq(request):
     return render(request, 'EhpadApp/faq.html')
 
-@login_required()
 def visite(request):
     return render(request, 'EhpadApp/visite.html')
 
-@login_required
 def visitor_contact_form(request):
     if request.method == 'POST':
         form = VisitorContactForm(request.POST)
