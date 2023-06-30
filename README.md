@@ -16,7 +16,7 @@ A. Lancer l'application :
 
     8. Lancer l'applicarion: python manage.py runserver
 
-    9. Aller à l'adresse: 127.0.0.1:8000/Ehpad/home
+    9. Aller à l'adresse: 127.0.0.1:8000
 
 B. Formulaire de contact
 
