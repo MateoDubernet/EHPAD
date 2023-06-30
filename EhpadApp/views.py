@@ -15,8 +15,11 @@ def register(request):
         form = CustomUserCreationForm(request.POST)
         if form.is_valid():
             form.save() #Enregistre un nouvelle utilisateur
+
+            # Récupére les données du formulaire
             username = form.cleaned_data.get('username')
             raw_password = form.cleaned_data.get('password1')
+
             user = authenticate(username=username, password=raw_password) #Vérifie le nom de l'utilisateur et le mot de passe correspondent
 
             login(request, user)
@@ -32,10 +35,12 @@ def logIn(request):
     if request.method == "POST":
         form = AuthenticationForm(data=request.POST)
         if form.is_valid():
+            # Récupére les données du formulaire
             username = form.cleaned_data.get('username')
             password = form.cleaned_data.get('password')
-            user = authenticate(username=username, password=password) #Vérifie le nom de l'utilisateur et le mot de passe correspondent
 
+            # Vérifie le nom de l'utilisateur et le mot de passe correspondent
+            user = authenticate(username=username, password=password) 
             if user is not None:
                 login(request, user)
                 return redirect("EhpadApp:home")
@@ -56,29 +61,36 @@ def logOut(request):
 def home(request):
     return render(request, 'EhpadApp/home.html', {'user': request.user})
 
+#affiche la page about
 def about(request):
     return render(request, 'EhpadApp/about.html')
 
+#affiche la page services
 def services(request):
     return render(request, 'EhpadApp/services.html')
 
+#affiche la page faq
 def faq(request):
     return render(request, 'EhpadApp/faq.html')
 
+#affiche la page visit
 def visite(request):
     return render(request, 'EhpadApp/visite.html')
 
+#formulaire de contact
 def visitor_contact_form(request):
     if request.method == 'POST':
         form = VisitorContactForm(request.POST)
         if form.is_valid():
             form.save() 
 
+            # Récupére les données du formulaire
             name = form.cleaned_data['name']
             email = form.cleaned_data['email']
             subject = form.cleaned_data['subject']
             message = form.cleaned_data['message']
 
+            #Récupére la page email
             html = render_to_string('EhpadApp/email.html', {
                 'name': name,
                 'email': email,
@@ -86,6 +98,7 @@ def visitor_contact_form(request):
                 'message': message
             })
 
+            #Envoie un email à l'adresse: projetdjango3@gmail.com
             send_mail(
                 form.cleaned_data['subject'],
                 form.cleaned_data['message'],
@@ -98,6 +111,7 @@ def visitor_contact_form(request):
         else: 
             return render(request, 'EhpadApp/contact.html', {'form': form})
     else:
+        # Renvoie la page contact avec un formulaire vide
         form = VisitorContactForm()
         return render(request, 'EhpadApp/contact.html', {'form': form})
 
