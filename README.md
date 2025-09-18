@@ -42,18 +42,14 @@ Pour tester en local sans serveur SMTP, il est possible d'utiliser le backend co
 ```
 Les mails s’afficheront alors dans la console Django au lieu d’être envoyés réellement.
 
-2. Vérifier le fichier views.py -> send_mail()
+2. Vérifier le fichier EhpadApp/views.py -> send_mail()
 Dans recipient_list indiquer la liste des destinataires.
 
 ## Utilisation
 
     1. compléter le formulaire et valider
 
-    2. aller sur le site: https://mailtrap.io/inboxes/2294690/messages
+    2. aller à l'adresse mail configurer indiquer dans recipient_list pour voir le mail ou celle mis dans settings.py en fonction du serveur smtp utiliser
 
-    3. connectez-vous avec les identifiants suivant:
-        Email: projetDjango3@gmail.com
-        Password: projetDjango3
-
-    4. Vous avez maintenant accès aux emails envoyer depuis le formulaire
+    3. Vous avez maintenant accès aux emails envoyer depuis le formulaire
 
