@@ -25,8 +25,8 @@ B. Formulaire de contact
 ## Configuration des emails
 Pour que l’envoi d’emails fonctionne, il faut modifier le fichier settings.py et éventuellement views.py si nécessaire.
 
-1. Modifier settings.py
-Dans ton projet Django, ouvre Ehpad/settings.py et configure un serveur SMTP :
+1. Modifier settings.py\
+Ouvreir Ehpad/settings.py et configure un serveur SMTP :
 ```bash
     EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
     EMAIL_HOST = "smtp.votre_service_mail.com"    # ex: smtp.gmail.com, smtp.sendinblue.com
@@ -36,7 +36,7 @@ Dans ton projet Django, ouvre Ehpad/settings.py et configure un serveur SMTP :
     EMAIL_HOST_PASSWORD = "votre_mot_de_passe"    # mot de passe ou mot de passe application
     DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 ```
-Si vous testez en local sans serveur SMTP, vous pouvez utiliser le backend console :
+Pour tester en local sans serveur SMTP, il est possible d'utiliser le backend console :
 ```bash
     EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 ```
