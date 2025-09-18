@@ -2,7 +2,9 @@ A. Lancer l'application :
 
     1. lancer la commande: .\EhpadEnv\Scripts\activate
 
-    2. installer Django sur EhpadEnv: pip install django
+    2. installer Django sur EhpadEnv: 
+        - python -m pip install --upgrade pip
+        - python -m pip install django
 
     3. installer mysqlclient: pip install mysqlclient
 
