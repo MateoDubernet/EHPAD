@@ -47,15 +47,13 @@ Dans recipient_list indiquer la liste des destinataires.
 
 ## Utilisation
 
-    1. Dans EhpadApp/views.py -> send_mail() mettre l'adresse mail à laquel doit être envoyer le contenu du formulaire
+    1. compléter le formulaire et valider
 
-    2. compléter le formulaire et valider
+    2. aller sur le site: https://mailtrap.io/inboxes/2294690/messages
 
-    3. aller sur le site: https://mailtrap.io/inboxes/2294690/messages
-
-    4. connectez-vous avec les identifiants suivant:
+    3. connectez-vous avec les identifiants suivant:
         Email: projetDjango3@gmail.com
         Password: projetDjango3
 
-    5. Vous avez maintenant accès aux emails envoyer depuis le formulaire
+    4. Vous avez maintenant accès aux emails envoyer depuis le formulaire
 
