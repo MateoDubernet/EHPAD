@@ -64,6 +64,7 @@ Pour tester en local sans serveur SMTP, il est possible d'utiliser le backend co
 Les mails s’afficheront alors dans la console Django au lieu d’être envoyés réellement.
 
 2. Vérifier le fichier views.py -> send_mail()\
+
 Ouvrir EhpadApp/views.py et modifier recipient_list dans send_mail() si besoin, cela permet d'indiquer la liste des destinataires.
 
 ---
