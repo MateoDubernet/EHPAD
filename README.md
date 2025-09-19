@@ -8,38 +8,37 @@ Elle inclut deux fonctionnalités principales :
 ---
 
 ## Installation et lancement de l'application
-
-    1. Cloner le projet
+1. Cloner le projet
 ```bash
     git clone https://github.com/MateoDubernet/EHPAD.git
     cd EHPAD
 ```
 
-    2. Activer l’environnement virtuel
+ 2. Activer l’environnement virtuel
 ```bash
     .\EhpadEnv\Scripts\activate
 ```
 
-    3. installer Django sur EhpadEnv: 
+3. installer Django sur EhpadEnv: 
     - python -m pip install --upgrade pip
     - python -m pip install django
 Si un problème est rencontré (par ex. erreurs avec pip ou Python), supprimer le dossier EhpadEnv puis créer l'environnement virtuel :
 ```bash
     python -m venv EhpadEnv
 ```
-    4. installer mysqlclient: pip install mysqlclient
+4. installer mysqlclient: pip install mysqlclient
 
-    5. creer la base de donnée 'ehpad_project' manuellement
+5. creer la base de donnée 'ehpad_project' manuellement
 
-    6. changer les param de la base de donnée(port, user, mdp, host, port) dans Ehpad/setting.py
+6. changer les param de la base de donnée(port, user, mdp, host, port) dans Ehpad/setting.py
 
-    7. Lancer la commande: python manage.py makemigrations
+7. Lancer la commande: python manage.py makemigrations
 
-    8. Ensuite la commande: python manage.py migrate
+8. Ensuite la commande: python manage.py migrate
 
-    9. Lancer l'applicarion: python manage.py runserver
+9. Lancer l'applicarion: python manage.py runserver
 
-    10. Aller à l'adresse: 127.0.0.1:8000
+10. Aller à l'adresse: 127.0.0.1:8000
 
 ---
 
