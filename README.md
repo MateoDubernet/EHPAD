@@ -22,6 +22,7 @@ Elle inclut deux fonctionnalités principales :
 3. installer Django sur EhpadEnv: 
     - python -m pip install --upgrade pip
     - python -m pip install django\
+
 Si un problème est rencontré (par ex. erreurs avec pip ou Python), supprimer le dossier EhpadEnv puis créer l'environnement virtuel :
 ```bash
     python -m venv EhpadEnv
