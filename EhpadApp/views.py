@@ -98,12 +98,12 @@ def visitor_contact_form(request):
                 'message': message
             })
 
-            #Envoie un email à l'adresse: projetdjango3@gmail.com
+            #Envoie un email à l'adresse indiqué
             send_mail(
-                form.cleaned_data['subject'],
-                form.cleaned_data['message'],
-                form.cleaned_data['email'],
-                ['projetdjango3@gmail.com'],
+                subject=form.cleaned_data['subject'],
+                message=form.cleaned_data['message'],
+                from_email=form.cleaned_data['email'],
+                recipient_list=['mateo.dubernet@gmail.com'],
                 html_message=html
             )
 

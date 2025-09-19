@@ -129,8 +129,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'EhpadApp.CustomUser'
 
+# Looking to send emails in production? Check out our Email API/SMTP product!
 EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
-EMAIL_HOST_USER = '29cab43f32bc4f'
-EMAIL_HOST_PASSWORD = 'b3f124b4c56f5f'
+EMAIL_HOST_USER = '77ee1556830d90'
+EMAIL_HOST_PASSWORD = 'd7129b6659986f'
 EMAIL_PORT = '2525'
-
