@@ -21,8 +21,8 @@ Elle inclut deux fonctionnalités principales :
 ## Installation & Lancement
 1. Cloner le projet
 ```bash
-    git clone https://github.com/MateoDubernet/EHPAD.git
-    cd EHPAD
+    git clone <url-du-repo>
+    cd <nom-du-dossier>
 ```
 
  2. Activer l’environnement virtuel
