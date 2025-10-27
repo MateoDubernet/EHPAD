@@ -30,7 +30,7 @@ Elle inclut deux fonctionnalités principales :
     .\EhpadEnv\Scripts\activate
 ```
 
-3. installer Django sur EhpadEnv: 
+3. installer Django sur EhpadEnv : 
     - python -m pip install --upgrade pip
     - python -m pip install django\
 
