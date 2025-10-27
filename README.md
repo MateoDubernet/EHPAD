@@ -33,16 +33,14 @@ Elle inclut deux fonctionnalités principales :
 
 ### 3. Installer les dépendances
 ```bash
+    python -m venv EhpadEnv
+```
+```bash
     python -m pip install --upgrade pip
 ```
 ```bash
     python -m pip install django\
 ``` 
-Si un problème est rencontré (par ex. erreurs avec pip ou Python), supprimer le dossier EhpadEnv puis créer l'environnement virtuel :
-```bash
-    python -m venv EhpadEnv
-```
-
 ```bash
     pip install mysqlclient
 ```
