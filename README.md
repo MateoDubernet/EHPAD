@@ -39,7 +39,7 @@ Elle inclut deux fonctionnalités principales :
     python -m pip install --upgrade pip
 ```
 ```bash
-    python -m pip install django\
+    python -m pip install django
 ``` 
 ```bash
     pip install mysqlclient
@@ -47,7 +47,7 @@ Elle inclut deux fonctionnalités principales :
 
 ### 5. Creer la base de donnée 'ehpad_project' manuellement
 
-### 6. Changer les param de la base de donnée(port, user, mdp, host, port) dans Ehpad/setting.py
+### 6. Changer les param de la base de donnée(port, user, mdp, host, port) dans Ehpad/setting.py -> DATABASES
 
 ### 7. Migrations
 ```bash
@@ -61,7 +61,7 @@ Elle inclut deux fonctionnalités principales :
 L’application utilise send_mail de Django pour envoyer les messages du formulaire de contact.
 
 1. Modifier settings.py\
-Ouvrir Ehpad/settings.py et configure un serveur SMTP :
+Ouvrir Ehpad/settings.py et configurer un serveur SMTP :
 ```bash
     EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
     EMAIL_HOST = "smtp.votre_service_mail.com"    # ex: smtp.gmail.com, smtp.sendinblue.com
@@ -71,7 +71,7 @@ Ouvrir Ehpad/settings.py et configure un serveur SMTP :
     EMAIL_HOST_PASSWORD = "votre_mot_de_passe"    # mot de passe ou mot de passe application
     DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 ```
-Pour tester en local sans serveur SMTP, il est possible d'utiliser le backend console :
+ou tester en local sans serveur SMTP, en utilisant le backend console :
 ```bash
     EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 ```
