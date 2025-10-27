@@ -1,5 +1,9 @@
 # EHPAD App
 
+## Contexte
+
+### Description
+Il s'agit d'un projet Python réaliser en groupe durant mon alternance dans le cadre d'un devoir maison.
 Cette application est une **démo de site web** pour présenter un EHPAD.  
 Elle inclut deux fonctionnalités principales :  
 - Un **formulaire de contact** (envoi d’email).  
@@ -7,7 +11,7 @@ Elle inclut deux fonctionnalités principales :
 
 ---
 
-## Installation et lancement de l'application
+## Installation & Lancement
 1. Cloner le projet
 ```bash
     git clone https://github.com/MateoDubernet/EHPAD.git
@@ -64,21 +68,17 @@ Pour tester en local sans serveur SMTP, il est possible d'utiliser le backend co
 Les mails s’afficheront alors dans la console Django au lieu d’être envoyés réellement.
 
 2. Vérifier le fichier views.py -> send_mail()\
-
 Ouvrir EhpadApp/views.py et modifier recipient_list dans send_mail() si besoin, cela permet d'indiquer la liste des destinataires.
 
 ---
 
-## Utilisation
+## Fonctionnalités
 
 ### Formulaire de contact
-    1. Compléter le formulaire et valider
-
-    2. Aller à l'adresse mail configurer indiquer dans recipient_list pour voir le mail ou celle mis dans settings.py en fonction du serveur smtp utiliser
-
-    3. Vous avez maintenant accès aux emails envoyer depuis le formulaire
+1. Compléter le formulaire et valider
+2. Aller à l'adresse mail configurer indiquer dans recipient_list pour voir le mail ou celle mis dans settings.py en fonction du serveur smtp utiliser
+3. Vous avez maintenant accès aux emails envoyer depuis le formulaire
 
 ### Inscription et connexion
-    1. Créer un compte
-
-    2. Connecter-vous
+1. Créer un compte
+2. Connecter-vous
