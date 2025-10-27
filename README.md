@@ -31,24 +31,33 @@ Elle inclut deux fonctionnalités principales :
     .\EhpadEnv\Scripts\activate
 ```
 
-### 3. installer Django sur EhpadEnv : 
-    - python -m pip install --upgrade pip
-    - python -m pip install django\
-
+### 3. Installer les dépendances
+```bash
+    python -m pip install --upgrade pip
+```
+```bash
+    python -m pip install django\
+``` 
 Si un problème est rencontré (par ex. erreurs avec pip ou Python), supprimer le dossier EhpadEnv puis créer l'environnement virtuel :
 ```bash
     python -m venv EhpadEnv
 ```
 
-### 4. installer mysqlclient: pip install mysqlclient
+```bash
+    pip install mysqlclient
+```
 
-### 5. creer la base de donnée 'ehpad_project' manuellement
+### 5. Creer la base de donnée 'ehpad_project' manuellement
 
-### 6. changer les param de la base de donnée(port, user, mdp, host, port) dans Ehpad/setting.py
+### 6. Changer les param de la base de donnée(port, user, mdp, host, port) dans Ehpad/setting.py
 
-### 7. Lancer la commande: python manage.py makemigrations
-
-### 8. Ensuite la commande: python manage.py migrate
+### 7. Migrations
+```bash
+    python manage.py makemigrations
+```
+```bash
+    python manage.py migrate
+```
 
 ### 9. Configuration des emails
 L’application utilise send_mail de Django pour envoyer les messages du formulaire de contact.
@@ -73,7 +82,10 @@ Les mails s’afficheront alors dans la console Django au lieu d’être envoyé
 2. Vérifier le fichier views.py -> send_mail()\
 Ouvrir EhpadApp/views.py et modifier recipient_list dans send_mail() si besoin, cela permet d'indiquer la liste des destinataires.
 
-### 10. Lancer l'applicarion: python manage.py runserver
+### 10. Lancer l'applicarion
+```bash
+    python manage.py runserver
+```
 
 ### 11. Aller à l'adresse: 127.0.0.1:8000
 
