@@ -20,18 +20,18 @@ Elle inclut deux fonctionnalités principales :
 ---
 
 ## Installation & Lancement
-1. Cloner le projet
+### 1. Cloner le projet
 ```bash
     git clone <url-du-repo>
     cd <nom-du-dossier>
 ```
 
- 2. Activer l’environnement virtuel
+### 2. Activer l’environnement virtuel
 ```bash
     .\EhpadEnv\Scripts\activate
 ```
 
-3. installer Django sur EhpadEnv : 
+### 3. installer Django sur EhpadEnv : 
     - python -m pip install --upgrade pip
     - python -m pip install django\
 
@@ -39,23 +39,18 @@ Si un problème est rencontré (par ex. erreurs avec pip ou Python), supprimer l
 ```bash
     python -m venv EhpadEnv
 ```
-4. installer mysqlclient: pip install mysqlclient
 
-5. creer la base de donnée 'ehpad_project' manuellement
+### 4. installer mysqlclient: pip install mysqlclient
 
-6. changer les param de la base de donnée(port, user, mdp, host, port) dans Ehpad/setting.py
+### 5. creer la base de donnée 'ehpad_project' manuellement
 
-7. Lancer la commande: python manage.py makemigrations
+### 6. changer les param de la base de donnée(port, user, mdp, host, port) dans Ehpad/setting.py
 
-8. Ensuite la commande: python manage.py migrate
+### 7. Lancer la commande: python manage.py makemigrations
 
-9. Lancer l'applicarion: python manage.py runserver
+### 8. Ensuite la commande: python manage.py migrate
 
-10. Aller à l'adresse: 127.0.0.1:8000
-
----
-
-## Configuration des emails
+### 9. Configuration des emails
 L’application utilise send_mail de Django pour envoyer les messages du formulaire de contact.
 
 1. Modifier settings.py\
@@ -77,6 +72,10 @@ Les mails s’afficheront alors dans la console Django au lieu d’être envoyé
 
 2. Vérifier le fichier views.py -> send_mail()\
 Ouvrir EhpadApp/views.py et modifier recipient_list dans send_mail() si besoin, cela permet d'indiquer la liste des destinataires.
+
+### 10. Lancer l'applicarion: python manage.py runserver
+
+### 11. Aller à l'adresse: 127.0.0.1:8000
 
 ---
 
