@@ -11,6 +11,13 @@ Elle inclut deux fonctionnalités principales :
 
 ---
 
+## Prérequis
+
+- Python
+- MySQL
+
+---
+
 ## Installation & Lancement
 1. Cloner le projet
 ```bash
