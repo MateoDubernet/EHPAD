@@ -84,12 +84,11 @@ Les mails s’afficheront alors dans la console Django au lieu d’être envoyé
 2. Vérifier le fichier views.py -> send_mail()\
 Ouvrir EhpadApp/views.py et modifier recipient_list dans send_mail() si besoin, cela permet d'indiquer la liste des destinataires.
 
-### 10. Lancer l'applicarion
+### 9. Lancer l'applicarion
 ```bash
     python manage.py runserver
 ```
-
-### 11. Aller à l'adresse: 127.0.0.1:8000
+Aller à l'adresse indiquer dans le terminal
 
 ---
 
