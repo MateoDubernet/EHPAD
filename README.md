@@ -30,12 +30,7 @@ Elle inclut deux fonctionnalités principales :
     cd EHPAD
 ```
 
-### 3. Activer l’environnement virtuel
-```bash
-    .\EhpadEnv\Scripts\activate
-```
-
-### 4. Installer les dépendances
+### 3. Installer les dépendances
 ```bash
     python -m venv EhpadEnv
 ```
@@ -47,6 +42,11 @@ Elle inclut deux fonctionnalités principales :
 ``` 
 ```bash
     pip install mysqlclient
+```
+
+### 4. Activer l’environnement virtuel
+```bash
+    .\EhpadEnv\Scripts\activate
 ```
 
 ### 5. Creer la base de donnée 'ehpad_project' manuellement
