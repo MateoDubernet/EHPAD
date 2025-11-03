@@ -22,16 +22,20 @@ Elle inclut deux fonctionnalités principales :
 ## Installation & Lancement
 ### 1. Cloner le projet
 ```bash
-    git clone <url-du-repo>
-    cd <nom-du-dossier>
+    git clone https://github.com/MateoDubernet/EHPAD.git
 ```
 
-### 2. Activer l’environnement virtuel
+### 2. Aller sur le projet
+```bash
+    cd EHPAD
+```
+
+### 3. Activer l’environnement virtuel
 ```bash
     .\EhpadEnv\Scripts\activate
 ```
 
-### 3. Installer les dépendances
+### 4. Installer les dépendances
 ```bash
     python -m venv EhpadEnv
 ```
@@ -57,7 +61,7 @@ Elle inclut deux fonctionnalités principales :
     python manage.py migrate
 ```
 
-### 9. Configuration des emails
+### 8. Configuration des emails
 L’application utilise send_mail de Django pour envoyer les messages du formulaire de contact.
 
 1. Modifier settings.py\
