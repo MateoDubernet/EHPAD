@@ -41,7 +41,7 @@ Elle inclut deux fonctionnalités principales :
     python -m pip install django
 ``` 
 ```bash
-    pip install mysqlclient
+    pip install --only-binary=:all: mysqlclient
 ```
 
 ### 4. Activer l’environnement virtuel
