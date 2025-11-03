@@ -39,7 +39,16 @@ Elle inclut deux fonctionnalités principales :
 ```
 ```bash
     python -m pip install django
-``` 
+```
+
+Installe les “Build Tools for Visual Studio” : https://visualstudio.microsoft.com/visual-cpp-build-tools/
+Installe-les (coche “Desktop development with C++”).
+
+Installe les en-têtes MySQL :
+Télécharge MySQL Server(https://dev.mysql.com/downloads/mysql/)
+ (choisis Windows (x86, 64-bit) → ZIP Archive).
+
+Installe-le ou dézippe-le dans C:\mysql\.
 ```bash
     pip install --only-binary=:all: mysqlclient
 ```
