@@ -13,7 +13,7 @@ Elle inclut deux fonctionnalités principales :
 
 ## Prérequis
 
-- Python
+- Python 3.12
 - Pip
 - MySQL
 
