@@ -14,7 +14,6 @@ Elle inclut deux fonctionnalités principales :
 ## Prérequis
 
 - Python 3.12
-- Pip
 - MySQL
 
 ---
