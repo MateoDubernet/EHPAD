@@ -46,7 +46,7 @@ Elle inclut deux fonctionnalités principales :
     python -m pip install django
 ```
 ```bash
-    py -3.12 -m pip install mysqlclient
+    python -m pip install mysqlclient
 ```
 
 ### 5. Creer la base de donnée 'ehpad_project' manuellement
