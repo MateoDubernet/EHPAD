@@ -32,7 +32,7 @@ Elle inclut deux fonctionnalités principales :
 
 ### 3. Activer l’environnement virtuel
 ```bash
-    python -m venv EhpadEnv
+    py -3.12 -m venv EhpadEnv
 ```
 ```bash
     .\EhpadEnv\Scripts\activate
