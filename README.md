@@ -5,10 +5,8 @@ Il s'agit d'un projet Python réaliser en groupe durant mon alternance dans le c
 
 ### Architecture
 - **Backend** : Django.
-
 - **Base de données** : MySQL.
-
-- **Infrastructure** : Entièrement conteneurisé avec Docker pour un déploiement "zéro configuration".
+- **Infrastructure** : Entièrement conteneurisé avec Docker.
 
 ---
 
@@ -33,6 +31,9 @@ Il s'agit d'un projet Python réaliser en groupe durant mon alternance dans le c
 
 ### 4. Accès
 - **Site Web** : http://localhost (Port 80)
+
+[!IMPORTANT]
+Assurez-vous que le port 80 n'est pas déjà utilisé par une autre application sur votre machine avant de lancer le conteneur.
 
 ---
 
