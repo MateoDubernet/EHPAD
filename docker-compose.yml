@@ -22,7 +22,6 @@ services:
       - DB_USER=root
       - DB_PASS=root
       - DB_PORT=3306
-      # Tu peux ajouter tes variables d'emails ici plus tard
       - EMAIL_BACKEND=django.core.mail.backends.console.EmailBackend
     depends_on:
       db:

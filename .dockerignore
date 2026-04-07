@@ -1,0 +1,37 @@
+# Environnement virtuel
+venv/
+.venv/
+env/
+.env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Base de données locale
+*.sqlite3
+
+# Dossiers média et statiques locaux
+media/
+static/
+staticfiles/
+
+# Logs et runtime
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDEs
+.vscode/
+.idea/
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Git
+.git/
+.gitignore
