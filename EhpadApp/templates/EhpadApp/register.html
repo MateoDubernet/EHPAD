@@ -1,6 +1,6 @@
 {% extends 'EhpadApp/main.html' %}
 
-{% block content %} 
+{% block content %}
 
 <div class="register">
     <h2 class="title">Inscription</h2>
@@ -9,7 +9,7 @@
         {% csrf_token %} {{ form.as_p }}
         <button type="submit">Inscription</button>
     </form>
-    
+
     <a class="login-link" href="{% url 'EhpadApp:login' %}">Se connecter</a>
 </div>
 

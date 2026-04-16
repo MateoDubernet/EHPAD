@@ -40,7 +40,7 @@ def logIn(request):
             password = form.cleaned_data.get('password')
 
             # Vérifie le nom de l'utilisateur et le mot de passe correspondent
-            user = authenticate(username=username, password=password) 
+            user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
                 return redirect("EhpadApp:home")
@@ -82,7 +82,7 @@ def visitor_contact_form(request):
     if request.method == 'POST':
         form = VisitorContactForm(request.POST)
         if form.is_valid():
-            form.save() 
+            form.save()
 
             # Récupére les données du formulaire
             name = form.cleaned_data['name']
@@ -108,14 +108,9 @@ def visitor_contact_form(request):
             )
 
             return redirect('EhpadApp:contact')
-        else: 
+        else:
             return render(request, 'EhpadApp/contact.html', {'form': form})
     else:
         # Renvoie la page contact avec un formulaire vide
         form = VisitorContactForm()
         return render(request, 'EhpadApp/contact.html', {'form': form})
-
-
-
-
-    
