@@ -4,8 +4,8 @@
 Il s'agit d'un projet Python réaliser en groupe durant mon alternance dans le cadre d'un devoir maison. Cette application est une **démo de site web** pour présenter un établissement EHPAD, incluant des fonctionnalités de gestion d'utilisateurs et de communication.
 
 ### Stack Technique
-- **Django**.
-- **Docker**.
+- **Django**
+- **Docker**
 
 ---
 
